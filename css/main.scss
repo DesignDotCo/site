@@ -182,6 +182,12 @@ footer {
     background-color: #f8f8f8;
 }
 
+@media(max-width:467px) {
+	footer {
+		padding: auto 0;
+	}
+}
+
 p.copyright {
     margin: 15px 0 0;
 }
@@ -247,8 +253,6 @@ p.copyright {
 }
 
 /* About Page */
-
-
 
 .letter {
   background: #fff;
@@ -343,4 +347,111 @@ tbody .kickback {
   background-color: darken(#446cb3, 10%);
   color: #fff;
   font-weight: bold;
+}
+
+/* Contact Page */
+
+.contact-page {
+	height: 980px;
+	margin-top: -30px;
+	background: url(../images/photo-1428677361686-f9d23be145c9.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.contact-page h2 {
+	margin: 6% auto 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	color: #fff;
+}
+
+form {
+	margin: 6% auto 0;
+	width: 600px;
+}
+
+form .form-group textarea {
+// background: rgba(145, 147, 136, 0.45);
+}
+
+textarea {
+	max-height: 200px;
+	resize: none;
+}
+
+//form .form-group input, form .form-group textarea {
+//	background: rgba(145, 147, 136, 0.45);
+//	color: #fff;
+//}
+
+.form-group input, .form-group select {
+//	background: rgba(145, 147, 136, 0.45);
+	height: 46px;
+}
+
+.form-group button, .form-group h5 {
+	margin: 0 auto;
+	float: left;
+	height: 46px;
+	width: 300px;
+	background: #446cb3;
+	color: #fff;
+	text-align: center;
+}
+
+.form-group .alert-bottom {
+	line-height: 44px
+}
+
+.form-group button {
+	background: #4167ab;
+	border: none;
+}
+
+.form-group button {
+	background: #3e62a3;
+}
+
+	/* Thanks Page */
+
+.thanks {
+	height: 980px;
+	margin-top: -30px;
+	background: url(../images/photo-1428279148693-1cf2163ed67d.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.thanks .row {
+	margin: 28% auto 0;
+	background: rgba(145, 147, 136, 0.45);
+	padding: 10px;
+	width: 650px;
+}
+
+@media(max-width:767px) {
+	.thanks .row {
+		margin-top: 47%;
+		margin-left: 5%;
+	}
+}
+
+@media(max-width:667px) {
+	.thanks .row {
+		margin-left: 9%;
+		width: 500px;
+	}
+}
+
+.thanks h2, .thanks h5 {
+	color: #fff;
+}
+
+.thanks-link {
+	margin-top: 3%;
+	float: left;
+	height: 26px;
+	width: 100%;
+}
+
+.thanks-link a {
+	color: #fff;
 }
