@@ -369,9 +369,9 @@ form {
 	width: 600px;
 }
 
-form .form-group textarea {
-// background: rgba(145, 147, 136, 0.45);
-}
+//form .form-group textarea {
+//	background: rgba(145, 147, 136, 0.45);
+//}
 
 textarea {
 	max-height: 200px;
@@ -399,7 +399,7 @@ textarea {
 }
 
 .form-group .alert-bottom {
-	line-height: 44px
+	line-height: 44px;
 }
 
 .form-group button {
@@ -407,8 +407,25 @@ textarea {
 	border: none;
 }
 
-.form-group button {
+.form-group button:hover {
 	background: #3e62a3;
+	color: #fff;
+	border: none;
+}
+
+@media(max-width:667px) {
+	.contact-page form {
+		margin: 6% auto 0;
+		margin-left: 13%;
+		width: 500px;
+	}
+	.form-group .alert-bottom {
+		margin-left: 20%;
+	}
+
+.form-group button {
+		margin-left: 20%;
+	}
 }
 
 	/* Thanks Page */
