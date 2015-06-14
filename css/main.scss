@@ -133,7 +133,7 @@ body {
 .contact {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../images/contact-bg.jpg) no-repeat center center;
+    background: url(../images/social-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -350,125 +350,66 @@ tbody .kickback {
 }
 
 /* Contact Page */
-
-.contact-page {
-	height: 980px;
-	margin-top: -30px;
-	background: url(../images/photo-1428677361686-f9d23be145c9.jpg) no-repeat center center fixed;
-	background-size: cover;
+.contact-header {
+  margin-top: -30px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../images/contact-bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 
-.contact-page h2 {
-	margin: 6% auto 0;
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-	color: #fff;
-}
-
-form {
-	margin: 6% auto 0;
-	width: 600px;
-}
-
-//form .form-group textarea {
-//	background: rgba(145, 147, 136, 0.45);
-//}
-
-textarea {
-	max-height: 200px;
-	resize: none;
-}
-
-//form .form-group input, form .form-group textarea {
-//	background: rgba(145, 147, 136, 0.45);
-//	color: #fff;
-//}
-
-.form-group input, .form-group select {
-//	background: rgba(145, 147, 136, 0.45);
-	height: 46px;
-}
-
-.form-group button, .form-group h5 {
-	margin: 0 auto;
-	float: left;
-	height: 46px;
-	width: 300px;
-	background: #446cb3;
-	color: #fff;
-	text-align: center;
-}
-
-.form-group .alert-bottom {
-	line-height: 44px;
-}
-
-.form-group button {
-	background: #4167ab;
-	border: none;
-}
-
-.form-group button:hover {
-	background: #3e62a3;
-	color: #fff;
-	border: none;
-}
-
-@media(max-width:667px) {
-	.contact-page form {
-		margin: 6% auto 0;
-		margin-left: 13%;
-		width: 500px;
-	}
-	.form-group .alert-bottom {
-		margin-left: 20%;
-	}
-
-.form-group button {
-		margin-left: 20%;
-	}
-}
-
-	/* Thanks Page */
-
-.thanks {
-	height: 980px;
-	margin-top: -30px;
-	background: url(../images/photo-1428279148693-1cf2163ed67d.jpg) no-repeat center center fixed;
-	background-size: cover;
-}
-
-.thanks .row {
-	margin: 28% auto 0;
-	background: rgba(145, 147, 136, 0.25);
-	padding: 10px;
-	width: 650px;
+.contact-form {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 @media(max-width:767px) {
-	.thanks .row {
-		margin-top: 47%;
-		margin-left: 5%;
-	}
+  .contact-form {
+    padding-bottom: 15%;
+  }
 }
 
-@media(max-width:667px) {
-	.thanks .row {
-		margin-left: 9%;
-		width: 500px;
-	}
+select.input-lg,
+.input-group-lg > select.form-control,
+.input-group-lg > select.input-group-addon,
+.input-group-lg > .input-group-btn > select.btn {
+  height: 50px;
+  line-height: inherit;
 }
 
-.thanks h2, .thanks h5 {
-	color: #fff;
+/* Thanks Page */
+.thanks-header {
+  margin-top: -30px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(../images/thanks-bg.jpg) no-repeat center center;
+  background-size: cover;
 }
 
-.thanks-link {
-	margin-top: 3%;
-	float: left;
-	height: 26px;
-	width: 100%;
+.thanks-message {
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+
+  h2, h5 {
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
 }
 
-.thanks-link a {
-	color: #fff;
+.thanks-message-bg {
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media(max-width:767px) {
+  .thanks-message {
+    padding-bottom: 15%;
+  }
 }
