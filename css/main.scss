@@ -256,7 +256,7 @@ p.copyright {
 
 .letter {
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   margin: 9% auto 0;
   max-width: 550px;
   min-height: 300px;
@@ -305,8 +305,13 @@ p.copyright {
 }
 
 @media(max-width:467px) {
+	.about-page {
+		padding-bottom: 40px;
+	}
 	.letter {
+		margin-top: -20px;
 		height: 850px;
+		width: 97%;
 		overflow-x: scroll;
 	}
 }
