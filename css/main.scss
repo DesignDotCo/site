@@ -355,6 +355,7 @@ tbody .kickback {
 }
 
 /* Contact Page */
+
 .contact-header {
 	position: absolute;
 	height: 100%;
@@ -394,6 +395,7 @@ select.input-lg,
 }
 
 /* Thanks Page */
+
 .thanks-header {
 	position: absolute;
 	height: 100%;
@@ -429,4 +431,65 @@ select.input-lg,
   .thanks-message {
     padding-bottom: 15%;
   }
+}
+
+/* FAQ Page */
+
+.faq-page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+  margin-top: -30px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #f8f8f8;
+  background: url(https://download.unsplash.com/photo-1428452932365-4e7e1c4b0987) no-repeat center center;
+  background-size: cover;
+		h2 {
+			margin-top: 100px;
+			margin-bottom: -20px;
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		}
+		.section-1 {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+}
+
+.panel-group {
+	margin-top: 30%;
+		.panel {
+			background: rgba(0,0,0,0.2);
+			width: 550px;
+	}
+}
+
+@media(max-width:1200px) {
+	.panel-group {
+		margin: 15% 38% 0;
+	}
+	.section-2 {
+		margin: -3% 1.3% 0;
+	}
+}
+
+@media(max-width:767px) {
+	.panel-group {
+		margin: 20% 15% 0;
+	}
+	.section-2 {
+		margin: -3% 1.3% 0;
+	}
+}
+
+@media(max-width:680px) {
+	.panel-group {
+		margin: 40% -10% 0;
+		.panel {
+			width: 348px;
+		}
+	}
+	.section-2 {
+		margin: -11% 2.2% 0;
+	}
 }
