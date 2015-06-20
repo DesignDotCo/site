@@ -13,4 +13,13 @@
 
   </body>
 
+<script>
+	$(document).scroll(function() {
+		var dHeight = $(this).height()-$(window).height();
+		if (dHeight >= $(this).scrollTop()) {
+			$('.navbar').css('background', 'rgba(68,108,179,' + $(this).scrollTop() / dHeight + ')');
+		}
+	});
+</script>
+
 </html>

@@ -23,168 +23,183 @@ body {
   margin-bottom: 67px;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+.intro-header {
+	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url(../images/intro-bg.jpg) no-repeat center center;
+	background-size: cover;
 }
 
-.intro-header {
-    margin-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
+.lead {
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+	position: relative;
+	padding-top: 20%;
+	padding-bottom: 20%;
 }
 
 .intro-message > .logo {
-  max-width: 400px;
+	max-width: 400px;
 }
 
 .intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	font-size: 5em;
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
+#about {
+	position: relative;
+	background: #446cb3;
+	height: 200px;
+	width: 100%;
 }
 
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
+#about h2 {
+	vertical-align: middle;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	width: 100%;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+#our-creators--header {
+	position: relative;
+	background: #436aaf;
+	height: 100px;
+	width: 100%;
 }
 
-.content-section-b {
-    padding: 50px 0;
+#our-creators--header h2 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-.section-heading {
-    margin-bottom: 30px;
-    font-weight: 700;
+.our-creators--partners {
+	width: 100%;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	margin: 0;
+	text-align: center;
 }
 
-.section-heading + p {
-  font-size: 18px;
+.our-creators--partners h2 {
+	text-align: center;
+	padding-top: 45%;
 }
 
-.section-icon {
-  font-size: 250px;
-  width: 100%;
-  text-align: center;
+.our-creators--partners h4 {
+	padding-left: -6%;
+	padding-right: -6%;
 }
 
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
+.finbarhawkes {
+	height: 550px;
+	background: url(../images/jobs-bg.jpg) no-repeat center center;
+	background-size: cover;
 }
 
-.section-heading-spacer-about {
-    float: left;
-    width: 350px;
-    border-top: 3px solid #e7e7e7;
+.EnderHydra {
+	height: 550px;
+	background: url(../images/Enderhydra-mc-avatar.png) no-repeat center center;
+	background-size: cover;
 }
 
-.contact {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../images/social-bg.jpg) no-repeat center center;
-    background-size: cover;
+.TheKiwiColonel {
+	height: 550px;
+	background: url(../images/kiwi-avatar.png) no-repeat center center;
+	background-size: cover;
 }
 
-.contact h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
+.TheSnackJoker {
+	height: 550px;
+	background: url(../images/thanks-bg.jpg) no-repeat center center;
+	background-size: cover;
 }
 
-.contact ul {
-    margin-bottom: 0;
+#apply {
+	position: relative;
+	background: #446cb3;
+	height: 200px;
+	width: 100%;
 }
 
-.contact-social-buttons {
-    float: right;
-    margin-top: 0;
+#apply .btn-lg {
+	border-radius: 5px;
+	padding: 1% 15%;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	background: #fff;
+	border: none;
+}
+
+#apply .btn-lg:hover {
+	background-color: darken(#fff, 1%);
+}
+
+#apply .btn-lg a:hover {
+	text-decoration: none;
+}
+
+
+#apply .btn-lg h2 {
+	color: #446cb3;
+	padding-top: -5px;
+	padding-bottom: 5px;
 }
 
 @media(max-width:1199px) {
     ul.contact-social-buttons {
-        float: left;
-        margin-top: 15px;
+			float: left;
+			margin-top: 15px;
     }
 }
 
 @media(max-width:767px) {
-    .contact h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
+	#about h2 {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.contact h2 {
+		margin: 0;
+		text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+		font-size: 3em;
+	}
+}
 
-    ul.contact-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.contact-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
+@media (max-width: 467px) {
+	#about h2 {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	footer {
+		padding: auto 0;
+	}
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+	padding: 50px 0;
+	background-color: #f8f8f8;
 }
 
 @media(max-width:467px) {
 	footer {
 		padding: auto 0;
+	}
+	.TheSnackJoker h4 {
+		padding-left: 9%;
 	}
 }
 
@@ -313,6 +328,90 @@ p.copyright {
 		height: 850px;
 		width: 97%;
 		overflow-x: scroll;
+	}
+}
+
+/* Benefits Page */
+
+.benefits-header {
+	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	height: 700px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url(../images/jobs-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.beneifts-message {
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.benefits-message > h1 {
+	margin: 25% 0 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.benefits-message > h3 {
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.network-name {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+
+.content-section-a {
+	padding: 50px 0;
+	background-color: #f8f8f8;
+}
+
+.content-section-b {
+	padding: 50px 0;
+}
+
+.section-heading {
+	margin-bottom: 30px;
+	font-weight: 700;
+}
+
+.section-heading + p {
+	font-size: 18px;
+}
+
+.section-icon {
+	font-size: 250px;
+	width: 100%;
+	text-align: center;
+}
+
+.section-heading-spacer {
+	float: left;
+	width: 200px;
+	border-top: 3px solid #e7e7e7;
+}
+
+.section-heading-spacer-about {
+	float: left;
+	width: 350px;
+	border-top: 3px solid #e7e7e7;
+}
+
+@media(max-width:767px) {
+	.benefits-message {
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+}
+
+@media(max-width:467px) {
+	.benefits-message {
+		padding-top: 50%;
+		padding-bottom: 50%;
 	}
 }
 
