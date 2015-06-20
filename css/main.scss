@@ -75,7 +75,7 @@ body {
 
 #our-creators--header {
 	position: relative;
-	background: #436aaf;
+	background: #4268ab;
 	height: 100px;
 	width: 100%;
 }
@@ -131,13 +131,12 @@ body {
 
 #apply {
 	position: relative;
-	background: #446cb3;
+	background: #4065a7;
 	height: 200px;
 	width: 100%;
 }
 
 #apply .btn-lg {
-	border-radius: 5px;
 	padding: 1% 15%;
 	margin-top: 55px;
 	margin-bottom: 55px;
@@ -269,15 +268,28 @@ p.copyright {
 
 /* About Page */
 
+.about-page {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+  margin-top: -80px;
+  padding-bottom: 50px;
+  text-align: center;
+  background: url(../images/about-bg.jpg) no-repeat center center;
+  background-size: cover;
+	z-index: -1;
+}
+
 .letter {
   background: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  margin: 9% auto 0;
+  margin: 11% auto 0;
   max-width: 550px;
   min-height: 300px;
   padding: 24px;
   position: relative;
   width: 80%;
+	z-index: 999;
 }
 
 .letter h2 {
@@ -417,6 +429,39 @@ p.copyright {
 
 /* Compare Page */
 
+.compare-header {
+	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	height: 200px;
+	background: url(../images/compare-bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.compare-message {
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.compare-message > h2 {
+	margin: -25px 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+	.compare-message {
+			padding-bottom: 5%;
+	}
+}
+
+@media (max-width:467px) {
+	.compare-message > h2 {
+		margin: 25px 0;
+	}
+}
+
 .sub-title {
 	font-size: 10px;
 	margin: -5px -2px 0 0;
@@ -424,6 +469,8 @@ p.copyright {
 }
 
 .table th, .table td, .table {
+	margin-top: 30px;
+	margin-bottom: 30px;
 	border-top: none !important;
 }
 
@@ -459,7 +506,7 @@ tbody .kickback {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-  margin-top: -30px;
+  margin-top: -80px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
@@ -499,7 +546,7 @@ select.input-lg,
 	position: absolute;
 	height: 100%;
 	width: 100%;
-  margin-top: -30px;
+  margin-top: -80px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
@@ -533,32 +580,33 @@ select.input-lg,
 }
 
 /* Jobs Page */
+
 .jobs-header {
-    margin-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../images/jobs-bg.jpg) no-repeat center center;
-    background-size: cover;
+	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 50px;
+	text-align: center;
+	color: #f8f8f8;
+	background: url(../images/jobs-bg.jpg) no-repeat center center;
+	background-size: cover;
 }
 
 .jobs-message {
-    position: relative;
-    padding-top: 10%;
-    padding-bottom: 10%;
+	position: relative;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 .jobs-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 .jobs-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
 @media(max-width:767px) {
-    .jobs-message {
-        padding-bottom: 5%;
-    }
+	.jobs-message {
+			padding-bottom: 5%;
+	}
 }
