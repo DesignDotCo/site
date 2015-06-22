@@ -364,7 +364,7 @@ p.copyright {
 
 .benefits-header {
 	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-	height: 700px;
+	height: 200px;
 	padding-bottom: 50px;
 	text-align: center;
 	color: #f8f8f8;
@@ -378,12 +378,8 @@ p.copyright {
 	padding-bottom: 10%;
 }
 
-.benefits-message > h1 {
-	margin: 25% 0 0;
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.benefits-message > h3 {
+.benefits-message > h2 {
+	margin: 8% 0;
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
@@ -431,16 +427,16 @@ p.copyright {
 }
 
 @media(max-width:767px) {
-	.benefits-message {
-		padding-top: 15%;
+	.benefits-message h2 {
+		padding-top: 3%;
 		padding-bottom: 15%;
 	}
 }
 
 @media(max-width:467px) {
-	.benefits-message {
-		padding-top: 50%;
-		padding-bottom: 50%;
+	.benefits-message h2 {
+		padding-top: 10%;
+		padding-bottom: 20%;
 	}
 }
 
