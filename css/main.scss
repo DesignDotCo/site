@@ -23,6 +23,20 @@ body {
   margin-bottom: 67px;
 }
 
+.navbar.opaque {
+  background: #4268ab;
+  transition: background-color 1s ease 0s; /* Transition effect to make it fade in (optional) */
+  box-shadow: 0px 0px 1px #000;
+}
+.navbar.opaque .navbar-brand {
+  color: #fff;
+  transition: color 1s ease 0s;
+}
+.navbar.opaque .navbar-nav > li > a {
+  color: #fff;
+  transition: color 1s ease 0s;
+}
+
 .intro-header {
 	margin-top: -80px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
 	padding-bottom: 50px;
@@ -164,6 +178,7 @@ body {
 }
 
 #network-stats {
+	padding-top: 1.5%;
 	padding-bottom: 50px;
 	text-align: center;
 	background: #3d609f;

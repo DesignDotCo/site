@@ -14,12 +14,21 @@
   </body>
 
 <script>
-	$(document).scroll(function() {
-		var dHeight = $(this).height()-$(window).height();
-		if (dHeight >= $(this).scrollTop()) {
-			$('.navbar').css('background', 'rgba(68,108,179,' + $(this).scrollTop() / dHeight + ')');
-		}
-	});
+
+  (function(){
+    $(window).scroll(function() {
+    
+        // check if window scroll for more than 430px. May vary
+        // as per the height of your main banner.
+        
+        if($(this).scrollTop() > 430) { 
+            $('.navbar').addClass('opaque'); // adding the opaque class
+        } else {
+            $('.navbar').removeClass('opaque'); // removing the opaque class
+        }
+    });
+  })();
+    
 </script>
 
 </html>
