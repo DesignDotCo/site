@@ -5,461 +5,297 @@
 @import "bootstrap";
 @import "kickback/bootswatch";
 
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+@import "kickback/font";
 
-@font-face {
-  font-family: 'kickback';
-  src: url('../fonts/kickback.eot');
-  src: url('../fonts/kickback.eot#iefix') format('embedded-opentype'),
-       url('../fonts/kickback.woff') format('woff'),
-       url('../fonts/kickback.ttf') format('truetype'),
-       url('../fonts/kickback.svg#kickback') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@import "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
 
 body {
   margin-top: 80px;
   margin-bottom: 67px;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
+/* Opaque Navbar on Scroll */
+.navbar {
+  @include transition(all 0.25s ease-out);
+
+  &.navbar-inverse {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  }
 }
 
-.intro-header {
-    margin-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../images/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-}
-
-.intro-message > .logo {
-  max-width: 400px;
-}
-
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
-}
-
-.network-name {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 2px;
-}
-
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-.content-section-b {
-    padding: 50px 0;
-}
-
-.section-heading {
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-.section-heading + p {
-  font-size: 18px;
-}
-
-.section-icon {
-  font-size: 250px;
-  width: 100%;
-  text-align: center;
-}
-
-.section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.section-heading-spacer-about {
-    float: left;
-    width: 350px;
-    border-top: 3px solid #e7e7e7;
-}
-
-.contact {
-    padding: 100px 0;
-    color: #f8f8f8;
-    background: url(../images/social-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.contact h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 3em;
-}
-
-.contact ul {
-    margin-bottom: 0;
-}
-
-.contact-social-buttons {
-    float: right;
-    margin-top: 0;
-}
-
-@media(max-width:1199px) {
-    ul.contact-social-buttons {
-        float: left;
-        margin-top: 15px;
-    }
-}
-
-@media(max-width:767px) {
-    .contact h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-    }
-
-    ul.contact-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.contact-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-}
-
-@media(max-width:467px) {
-	footer {
-		padding: auto 0;
-	}
-}
-
-p.copyright {
-    margin: 15px 0 0;
-}
-
-/* Brand Buttons */
-.btn-youtube {
-  background-color: #cd201f;
-  border-color: #cd201f;
-  color: #fff;
-}
-.btn-youtube:hover,
-.btn-youtube:focus, .btn-youtube.focus,
-.btn-youtube:active, .btn-youtube.active,
-.open > .btn-youtube.dropdown-toggle {
-  color: #fff;
-  background-color: #a11918;
-  border-color: #a11918;
-}
-
-/* Kickback Icon */
-@font-face {
-  font-family: 'kickback';
-  src: url('../fonts/kickback.eot');
-  src: url('../fonts/kickback.eot#iefix') format('embedded-opentype'),
-       url('../fonts/kickback.woff') format('woff'),
-       url('../fonts/kickback.ttf') format('truetype'),
-       url('../fonts/kickback.svg#kickback') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="kickback-"], [class*=" kickback-"] {
-  font-family: 'kickback';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.kickback-icon:before {
-  content: "\e600";
-}
-
-.kickback-full:before {
-  content: "\e601";
-}
-
+/* Static Footer */
 .footer {
-  background: #eeeeee;
-  color: #777777;
+  background: $gray-lighter;
+  color: $gray-light;
   font-size: 12px;
   padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: $zindex-footer-fixed;
 }
 
-/* About Page */
+/* Page Headers with Background */
+.header {
+  margin-top: -80px;
+  margin-bottom: 20px;
 
-.letter {
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  margin: 9% auto 0;
-  max-width: 550px;
-  min-height: 300px;
-  padding: 24px;
-  position: relative;
-  width: 80%;
-}
-
-.letter h2 {
-	text-align: center;
-	margin-bottom: 25px;
-}
-
-.letter p {
-	font-size: 18px;
-}
-
-.letter:before, .letter:after {
-  content: "";
-  height: 98%;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
-
-.letter:before {
-  background: #fafafa;
-  box-shadow: 0 0 8px rgba(0,0,0,0.2);
-  left: -5px;
-  top: 4px;
-  transform: rotate(-2.5deg);
-}
-
-.letter:after {
-  background: #f6f6f6;
-  box-shadow: 0 0 3px rgba(0,0,0,0.2);
-  right: -3px;
-  top: 1px;
-  transform: rotate(1.4deg);
-}
-
-@media(max-width:767px) {
-	.letter {
-		margin: 15% auto 0;
-	}
-}
-
-@media(max-width:467px) {
-	.about-page {
-		padding-bottom: 40px;
-	}
-	.letter {
-		margin-top: -20px;
-		height: 850px;
-		width: 97%;
-		overflow-x: scroll;
-	}
-}
-
-/* Compare Page */
-
-.sub-title {
-	font-size: 10px;
-	margin: -5px -2px 0 0;
-	padding: 0;
-}
-
-.table th, .table td, .table {
-	border-top: none !important;
-}
-
-.table img {
-	vertical-align: middle;
-}
-
-tr.logos img {
-  padding: 10px;
-  height: 90px;
-}
-
-tr.logos .kickback img {
-  padding: 10px;
-  height: 50px;
-}
-
-thead .kickback {
-  background-color: #446cb3;
-  color: #fff;
-  font-weight: bold;
-}
-
-tbody .kickback {
-  background-color: darken(#446cb3, 10%);
-  color: #fff;
-  font-weight: bold;
-}
-
-/* Contact Page */
-
-.contact-header {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-  margin-top: -30px;
-  padding-bottom: 50px;
   text-align: center;
-  color: #f8f8f8;
-  background: url(../images/contact-bg.jpg) no-repeat center center;
+
+  background: $brand-primary no-repeat center center;
   background-size: cover;
-}
+  color: #f8f8f8;
 
-.contact-form {
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 25%;
-}
+	h1, h2, h3, h4, h5 {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
 
-.contact-header h2 {
-	margin-top: 100px;
-	margin-bottom: -20px;
-	text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-@media(max-width:767px) {
-  .contact-form {
+  .container {
+    position: relative;
+    padding-top: 15%;
     padding-bottom: 15%;
+  }
+
+  &.header-sm {
+    .container {
+      padding-top: 5%;
+      padding-bottom: 5%;
+    }
+  }
+
+  &.header-index {
+    margin-bottom: 0;
+
+  	background-image: url(../images/bgs/index.jpg);
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    h3 {
+      font-size: 2.25em;
+      margin: 10px 0;
+    }
+
+    .btn {
+      margin: 10px auto 0 auto;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &.header-jobs {
+    background-image: url(../images/bgs/jobs.jpg);
+  }
+
+  &.header-compare {
+    background-image: url(../images/bgs/compare.jpg);
+  }
+
+  &.header-benefits {
+    background-image: url(../images/bgs/benefits.jpg);
+  }
+
+  &.header-about {
+    background-image: url(../images/bgs/about.jpg);
+  }
+
+}
+
+
+/* Lead Heading */
+.lead-line {
+  text-align: center;
+  color: #fff;
+
+  background-color: darken($brand-primary, 10%);
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  h2 {
+    margin: 5% 0;
   }
 }
 
-select.input-lg,
-.input-group-lg > select.form-control,
-.input-group-lg > select.input-group-addon,
-.input-group-lg > .input-group-btn > select.btn {
-  height: 50px;
-  line-height: inherit;
-}
 
-/* Thanks Page */
-
-.thanks-header {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-  margin-top: -30px;
-  padding-bottom: 50px;
+/* Network Stats */
+.stats {
   text-align: center;
-  color: #f8f8f8;
-  background: url(../images/thanks-bg.jpg) no-repeat center center;
-  background-size: cover;
+  color: #fff;
+
+  background-color: $brand-primary;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  h3 {
+    margin: 20px 0 5px 0;
+  }
+
+  h4 {
+    margin: 0 0 20px 0;
+  }
 }
 
-.thanks-message {
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
 
-  h2, h5 {
-    margin: 0;
+/* Partner Features */
+.partners {
+  text-align: center;
+  color: #fff;
+
+  background-color: darken($brand-primary, 10%);
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  .feature {
+    background: no-repeat center center;
+    background-size: cover;
+
+    padding-top: 8%;
+    padding-bottom: 8%;
+
+    @include transition(all 0.1s ease-out);
+
+    &.lee-hinchcliffe {
+      background-image: url(../images/partners/leehinchcliffe.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/leehinchcliffe-hover.jpg);
+      }
+    }
+
+    &.thekiwicolonel {
+      background-image: url(../images/partners/thekiwicolonel.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/thekiwicolonel-hover.jpg);
+      }
+    }
+
+    &.sam-patterson {
+      background-image: url(../images/partners/sam-patterson.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/sam-patterson-hover.jpg);
+      }
+    }
+
+    &.enderhydra {
+      background-image: url(../images/partners/enderhydra.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/enderhydra-hover.jpg);
+      }
+    }
+
+    &.thesnackjoker {
+      background-image: url(../images/partners/thesnackjoker.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/thesnackjoker-hover.jpg);
+      }
+    }
+
+    &.finbarhawkes {
+      background-image: url(../images/partners/finbarhawkes.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/finbarhawkes-hover.jpg);
+      }
+    }
+
+    &.josh-jones {
+      background-image: url(../images/partners/josh-jones.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/josh-jones-hover.jpg);
+      }
+    }
+
+    &.ollie-munro {
+      background-image: url(../images/partners/ollie-munro.jpg);
+
+      &:hover {
+        background-image: url(../images/partners/ollie-munro-hover.jpg);
+      }
+    }
+  }
+}
+
+
+/* Compare Table */
+.compare {
+  .table, table {
+    &, & th, & td {
+      margin: 30px inherit;
+      border-top: 0 !important;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .sub-title {
+      font-size: 11px;
+      margin: -5px -2px 0 0;
+    }
+
+    tr.logos {
+      img {
+        padding: 10px;
+        height: 90px;
+      }
+
+      .kickback img {
+        height: 50px;
+      }
+    }
+
+    thead .kickback {
+      background: $brand-primary;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    tbody .kickback {
+      background: darken($brand-primary, 10%);
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+
+/* Benefits Page */
+.benefits {
+
+  .row:nth-child(even) {
+    background-color: $gray-lighter;
   }
 
   h2 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
   }
-}
 
-.thanks-message-bg {
-  padding: 40px 0;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-@media(max-width:767px) {
-  .thanks-message {
-    padding-bottom: 15%;
+  p {
+    font-size: 18px;
   }
-}
 
-/* Jobs Page */
-.jobs-header {
-    margin-top: -30px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+  .fa {
+    font-size: 250px;
+    width: 100%;
     text-align: center;
-    color: #f8f8f8;
-    background: url(../images/jobs-bg.jpg) no-repeat center center;
-    background-size: cover;
+  }
+
+  .row {
+    padding: 50px inherit;
+  }
 }
 
-.jobs-message {
-    position: relative;
-    padding-top: 10%;
-    padding-bottom: 10%;
-}
 
-.jobs-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-.jobs-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-}
-
-@media(max-width:767px) {
-    .jobs-message {
-        padding-bottom: 5%;
-    }
+/* About Page */
+.about {
+  p {
+    font-size: 18px;
+  }
 }
