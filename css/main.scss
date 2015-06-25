@@ -11,7 +11,7 @@
 
 body {
   margin-top: 80px;
-  margin-bottom: 67px;
+  margin-bottom: 37px;
 }
 
 /* Opaque Navbar on Scroll */
@@ -150,10 +150,23 @@ body {
     background: no-repeat center center;
     background-size: cover;
 
+    h2 a {
+      color: #fff;
+
+      &:hover {
+        color: $gray-lighter;
+      }
+    }
+
     padding-top: 8%;
     padding-bottom: 8%;
 
     @include transition(all 0.1s ease-out);
+
+    .stats {
+      padding: 0 40px;
+      background-color: transparent;
+    }
 
     &.lee-hinchcliffe {
       background-image: url(../images/partners/leehinchcliffe.jpg);
