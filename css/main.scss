@@ -92,12 +92,12 @@ body {
     background-image: url(../images/bgs/compare.jpg);
   }
 
-  &.header-benefits {
-    background-image: url(../images/bgs/benefits.jpg);
-  }
-
   &.header-about {
     background-image: url(../images/bgs/about.jpg);
+  }
+
+  &.header-networks {
+    background-image: url(../images/bgs/networks.jpg);
   }
 
 }
@@ -278,30 +278,32 @@ body {
 }
 
 
-/* Benefits Page */
-.benefits {
+/* Networks Page */
+.networks {
 
-  .row:nth-child(even) {
-    background-color: $gray-lighter;
+  h1 {
+    font-weight: bold;
   }
 
-  h2 {
-    margin-bottom: 30px;
-    font-weight: bold;
+  .network-genre {
+    margin-top: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 
   p {
     font-size: 18px;
   }
 
-  .fa {
-    font-size: 250px;
-    width: 100%;
-    text-align: center;
+  .network-coming-soon {
+    text-transform: lowercase;
+    font-style: italic;
+    font-weight: normal;
   }
 
   .row {
-    padding: 50px inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
