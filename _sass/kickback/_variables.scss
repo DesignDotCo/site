@@ -14,11 +14,12 @@ $gray:                   lighten($gray-base, 33.5%); // #555
 $gray-light:             lighten($gray-base, 46.7%); // #777
 $gray-lighter:           lighten($gray-base, 93.5%); // #eee
 
-$brand-primary:         #446cb3;
-$brand-success:         #45b347;
-$brand-info:            #5bc0de;
+$brand-primary:         #282d3c;
+$brand-secondary:       #00aaff;
+$brand-success:         #5fe69b;
+$brand-info:            $brand-secondary;
 $brand-warning:         #f0ad4e;
-$brand-danger:          #b34544;
+$brand-danger:          #e62d3c;
 
 
 //== Scaffolding
@@ -31,7 +32,7 @@ $body-bg:               #fff;
 $text-color:            $gray-dark;
 
 //** Global textual link color.
-$link-color:            $brand-primary;
+$link-color:            $brand-secondary;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      darken($link-color, 15%);
 //** Link hover decoration.
@@ -42,8 +43,8 @@ $link-hover-decoration: underline;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Open Sans", Helvetica, Arial, sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:  Roboto, Helvetica, Arial, sans-serif;
+$font-family-serif:       "Roboto Slab", Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
@@ -102,9 +103,9 @@ $padding-xs-horizontal:     5px;
 $line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5;
 
-$border-radius-base:        0;
-$border-radius-large:       0;
-$border-radius-small:       0;
+$border-radius-base:        2px;
+$border-radius-large:       3px;
+$border-radius-small:       1px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff;
@@ -122,9 +123,9 @@ $caret-width-large:         5px;
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-$table-cell-padding:            8px;
+$table-cell-padding:            14px;
 //** Padding for cells in `.table-condensed`.
-$table-condensed-cell-padding:  5px;
+$table-condensed-cell-padding:  7px;
 
 //** Default background color used for all tables.
 $table-bg:                      transparent;
@@ -151,6 +152,10 @@ $btn-default-border:             #ccc;
 $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             $brand-primary;
+
+$btn-secondary-color:            #fff;
+$btn-secondary-bg:               $brand-secondary;
+$btn-secondary-border:           $brand-secondary;
 
 $btn-success-color:              #fff;
 $btn-success-bg:                 $brand-success;
@@ -269,6 +274,8 @@ $zindex-navbar-fixed:      1030;
 $zindex-modal:             1040;
 $zindex-alert-fixed:       1035;
 $zindex-footer-fixed:      1000;
+$zindex-sidebar:           1000;
+$zindex-sidebar-active:    1005;
 
 
 //== Media queries breakpoints

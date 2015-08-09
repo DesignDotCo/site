@@ -2,7 +2,9 @@
 // Bootswatch
 // -----------------------------------------------------
 
-@import "//fonts.googleapis.com/css?family=Open+Sans";
+@import url("//fonts.googleapis.com/css?family=Roboto:300,400,700");
+@import url("//fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+
 
 // Navbar =====================================================================
 
@@ -21,6 +23,7 @@
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     &:hover,
     &:focus {
       color: darken($navbar-inverse-brand-hover-color, 10%);
@@ -30,11 +33,13 @@
 
   .navbar-text {
     color: $navbar-inverse-color;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   }
 
   .navbar-nav {
     > li > a {
       color: $navbar-inverse-link-color;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 
       &:hover,
       &:focus {
@@ -63,32 +68,18 @@
 
 // Breadcrumbs ================================================================
 
-.breadcrumb {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 50px; /* Accounts for navbar */
-  z-index: $zindex-navbar-fixed;
-}
-
 // Buttons ====================================================================
-
-.btn {
-  &-labeled {
-    padding: 0 $padding-base-horizontal;
-  }
-
-  &-label {
-    position: relative;
-    left: -$padding-base-horizontal;
-    display: inline-block;
-    padding: $padding-base-vertical $padding-base-horizontal;
-    background: rgba(0, 0, 0, 0.15);
-  }
-}
 
 .btn-outline {
   @include button-variant(#fff, transparent, #fff);
+}
+
+.btn-secondary {
+  @include button-variant($btn-secondary-color, $btn-secondary-bg, $btn-secondary-border);
+}
+
+.btn-link:hover, .btn-link:focus {
+  text-decoration: none;
 }
 
 // Typography =================================================================
@@ -137,19 +128,6 @@ body {
   }
 }
 
-.table-expanded {
-  > thead,
-  > tbody,
-  > tfoot {
-    > tr {
-      > th,
-      > td {
-        padding: 15px;
-      }
-    }
-  }
-}
-
 // Forms ======================================================================
 
 .form-control,
@@ -161,10 +139,8 @@ input, {
   }
 }
 
-select.form-control {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.form-group:last-child {
+  margin-bottom: 0;
 }
 
 .has-warning {
@@ -174,15 +150,16 @@ select.form-control {
   }
 
   .help-block {
-    margin-top: 0;
     background-color: $brand-warning;
     color: #fff;
     padding: 4px 8px;
+    border-radius: $border-radius-base;
   }
 
   .form-control,
   .form-control:focus,
   .input-group-addon {
+    @include box-shadow(#{"none"});
     border: 1px solid $brand-warning;
   }
 }
@@ -194,15 +171,16 @@ select.form-control {
   }
 
   .help-block {
-    margin-top: 0;
     background-color: $brand-danger;
     color: #fff;
     padding: 4px 8px;
+    border-radius: $border-radius-base;
   }
 
   .form-control,
   .form-control:focus,
   .input-group-addon {
+    @include box-shadow(#{"none"});
     border: 1px solid $brand-danger;
   }
 }
@@ -214,15 +192,16 @@ select.form-control {
   }
 
   .help-block {
-    margin-top: 0;
     background-color: $brand-success;
     color: #fff;
     padding: 4px 8px;
+    border-radius: $border-radius-base;
   }
 
   .form-control,
   .form-control:focus,
   .input-group-addon {
+    @include box-shadow(#{"none"});
     border: 1px solid $brand-success;
   }
 }
@@ -287,6 +266,10 @@ select.form-control {
   @include dropdown-variant(#fff, $brand-danger);
 }
 
+.nav-tabs + .panel {
+  margin-top: -1px;
+}
+
 // Indicators =================================================================
 
 .close {
@@ -302,28 +285,6 @@ select.form-control {
 
 .label {
   border-radius: 0;
-}
-
-.alert {
-    position: fixed;
-    top: $navbar-height;
-    left: 0;
-    z-index: $zindex-alert-fixed;
-    width: 100%;
-    margin: 0;
-
-  .alert-link {
-    text-decoration: underline;
-    color: #fff;
-  }
-}
-
-@media (min-width: 992px) {
-  .alert {
-    left: 50%;
-    width: 992px;
-    margin-left: -496px;
-  }
 }
 
 // Progress bars ==============================================================
@@ -342,4 +303,13 @@ select.form-control {
 
 .popover {
   @include box-shadow(#{"none"});
+}
+
+.media-left {
+  padding-right: 15px;
+}
+.media-left,
+.media-body,
+.media-right {
+  vertical-align: middle;
 }
