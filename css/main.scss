@@ -66,7 +66,7 @@ body {
   &.header-index {
     margin-bottom: 0;
 
-  	background-image: url(../images/bgs/index.jpg);
+  	background-image: url(../images/bgs/index.jpg?git={{ site.github.build_revision }});
 
     h1 {
       font-size: 4em;
@@ -85,19 +85,19 @@ body {
   }
 
   &.header-jobs {
-    background-image: url(../images/bgs/jobs.jpg);
+    background-image: url(../images/bgs/jobs.jpg?git={{ site.github.build_revision }});
   }
 
   &.header-compare {
-    background-image: url(../images/bgs/compare.jpg);
+    background-image: url(../images/bgs/compare.jpg?git={{ site.github.build_revision }});
   }
 
   &.header-about {
-    background-image: url(../images/bgs/about.jpg);
+    background-image: url(../images/bgs/about.jpg?git={{ site.github.build_revision }});
   }
 
   &.header-networks {
-    background-image: url(../images/bgs/networks.jpg);
+    background-image: url(../images/bgs/networks.jpg?git={{ site.github.build_revision }});
   }
 
 }
@@ -166,70 +166,6 @@ body {
     .stats {
       padding: 0 40px;
       background-color: transparent;
-    }
-
-    &.lee-hinchcliffe {
-      background-image: url(../images/partners/leehinchcliffe.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/leehinchcliffe-hover.jpg);
-      }
-    }
-
-    &.thekiwicolonel {
-      background-image: url(../images/partners/thekiwicolonel.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/thekiwicolonel-hover.jpg);
-      }
-    }
-
-    &.sam-patterson {
-      background-image: url(../images/partners/sam-patterson.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/sam-patterson-hover.jpg);
-      }
-    }
-
-    &.enderhydra {
-      background-image: url(../images/partners/enderhydra.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/enderhydra-hover.jpg);
-      }
-    }
-
-    &.thesnackjoker {
-      background-image: url(../images/partners/thesnackjoker.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/thesnackjoker-hover.jpg);
-      }
-    }
-
-    &.finbarhawkes {
-      background-image: url(../images/partners/finbarhawkes.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/finbarhawkes-hover.jpg);
-      }
-    }
-
-    &.josh-jones {
-      background-image: url(../images/partners/josh-jones.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/josh-jones-hover.jpg);
-      }
-    }
-
-    &.ollie-munro {
-      background-image: url(../images/partners/ollie-munro.jpg);
-
-      &:hover {
-        background-image: url(../images/partners/ollie-munro-hover.jpg);
-      }
     }
   }
 }
