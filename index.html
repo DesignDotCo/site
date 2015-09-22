@@ -2,167 +2,24 @@
 layout: default
 ---
 
-<div class="header header-index">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h1><i class="kickback-full"></i></h1>
-			</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-6 col-md-offset-3">
+			<h2 class="text-center text-primary">Kickback is now part of Exonia.</h2>
+			<br>
+			<p>Dear Kickback Creators,</p>
+			<p>Earlier this year, we set out to build one of the most advanced partnership networks on YouTube.  We knew this would not be an easy task, and it certainly proved to be much more difficult than we thought.  We were extremely lucky to have a business partner in Exonia, who have helped us every step of the way with our network.</p>
+			<p>We are very proud to announce that we have been acquired by Exonia.  It's a tremendous leap forward for our partners, and you will be able to expect much more involvment and better technology moving forward.</p>
+			<p>Here are some of the key points for creators currently part of Kickback:</p>
+			<ul>
+				<li>You will receieve your payments for <b>August and September earnings on the normal schedule</b> (August payments on October 1st, and September payments on November 1st).</li>
+				<li>Your channel will be <b>moved to the Exonia Network on the 30th of September</b>.  No action is required on your part; this will be done automatically.</li>
+				<li>After your channel is moved into the Exonia Network, keep an eye out for additional information about their partner tools and dashboard.</li>
+				<li>After the 30th of September, <b>all requests for support should be directed to support [at] exonia.net</b>.</li>
+			</ul>
+			<p>On behalf of everyone at Kickback, we want to thank you for your support up until this point.  We're confident that Exonia will take great care of our partners well into the future.</p>
+			<p>If you have any additional questions, you can email our support department at support [at] gokickback.co up until November 1st.</p>
+			<p>-- Troy and the Kickback Team</p>
 		</div>
 	</div>
 </div>
-
-<div class="lead-line">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>The world's most advanced multi-channel network for the world's most advanced creators.</h2>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="stats">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<h3 id="channels"><i class="fa fa-fw fa-ellipsis-h"></i></h3>
-				<h4>Total Channels</h4>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<h3 id="videos"><i class="fa fa-fw fa-ellipsis-h"></i></h3>
-				<h4>Total Videos</h4>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<h3 id="subscribers"><i class="fa fa-fw fa-ellipsis-h"></i></h3>
-				<h4>Total Subscribers</h4>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3">
-				<h3 id="views"><i class="fa fa-fw fa-ellipsis-h"></i></h3>
-				<h4>Total Views</h4>
-			</div>
-		</div>
-	</div>
-</div>
-
-<script>
-	$(document).on('ready', function() {
-		$.ajax({ url: 'https://www.kimonolabs.com/api/7itjq1be?apikey=wm8pyAjhPO09ynkIxrYqfws11DtMKRfO', crossDomain: true, dataType: 'jsonp', success: function(data) {
-			$('#channels').text(data.results.stats[0].channels);
-			$('#videos').text(data.results.stats[0].videos);
-			$('#subscribers').text(data.results.stats[0].subscribers);
-			$('#views').text(data.results.stats[0].views);
-		} });
-	});
-</script>
-
-<!-- <div class="partners">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xs-12">
-				<h2>Featured Partners</h2>
-				<h4>June 2015</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3 feature lee-hinchcliffe">
-				<h2>
-					Lee Hinchcliffe
-					<a target="_blank" href="https://www.youtube.com/channel/UCkr00W42lm9QVnPVQZ_bTkQ"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Vlogger</h5>
-				<div class="stats">
-					<h4 class="pull-left">2K Subscribers</h4>
-					<h4 class="pull-right">26K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature thekiwicolonel">
-				<h2>
-					TheKiwiColonel
-					<a target="_blank" href="https://www.youtube.com/channel/UC-y9HWIGC9lCskVTGPoypDQ"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Gamer</h5>
-				<div class="stats">
-					<h4 class="pull-left">8K Subscribers</h4>
-					<h4 class="pull-right">516K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature sam-patterson">
-				<h2>
-					Sam Patterson
-					<a target="_blank" href="https://www.youtube.com/channel/UCdfK5w8cpqq9yQlIMsKvrUQ"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Musician & Vlogger</h5>
-				<div class="stats">
-					<h4 class="pull-left">2K Subscribers</h4>
-					<h4 class="pull-right">12K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature enderhydra">
-				<h2>
-					EnderHydra
-					<a target="_blank" href="https://www.youtube.com/channel/UC9Fyu7l4tC7zYOClGpvdCaQ"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Gamer</h5>
-				<div class="stats">
-					<h4 class="pull-left">8K Subscribers</h4>
-					<h4 class="pull-right">921K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3 feature thesnackjoker">
-				<h2>
-					TheSnackJoker
-					<a target="_blank" href="https://www.youtube.com/channel/UCHu_PYWgOAHwfjVeJm-0_Tg"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Gamer</h5>
-				<div class="stats">
-					<h4 class="pull-left">137K Subscribers</h4>
-					<h4 class="pull-right">15M Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature josh-jones">
-				<h2>
-					Josh Jones
-					<a target="_blank" href="https://www.youtube.com/channel/UCWbVOBNds4P5uowMvJ_JsFQ"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Vlogger</h5>
-				<div class="stats">
-					<h4 class="pull-left">5K Subscribers</h4>
-					<h4 class="pull-right">119K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature finbarhawkes">
-				<h2>
-					FinbarHawkes
-					<a target="_blank" href="https://www.youtube.com/channel/UCaZ5NlPCJtXU6Q8uinqTHUg"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Gamer</h5>
-				<div class="stats">
-					<h4 class="pull-left">126K Subscribers</h4>
-					<h4 class="pull-right">45M Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 feature ollie-munro">
-				<h2>
-					Ollie Munro
-					<a target="_blank" href="https://www.youtube.com/channel/UCsHyB2Ek-gv9jaFVTTbaHmA"><i class="fa fa-youtube-play"></i></a>
-				</h2>
-				<h5 class="text-uppercase">Vlogger</h5>
-				<div class="stats">
-					<h4 class="pull-left">7K Subscribers</h4>
-					<h4 class="pull-right">83K Views</h4>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div> -->
